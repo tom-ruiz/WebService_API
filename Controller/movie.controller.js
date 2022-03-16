@@ -28,7 +28,7 @@ class Controller {
     }
 
 
-    async searchmovie(movieName) {
+    async searchMovie(movieName) {
         logger.info('controller: search movie', movieName);
         return await movieservice.searchmovie(movieName);
     }

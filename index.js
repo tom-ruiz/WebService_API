@@ -101,11 +101,11 @@ app.delete('/api/movie/:id', (req, res) => {
 });
 
 app.get('/api/movie/search/:name', (req, res) => {
-    movieController.searchmovie(req.params.name).then(data => res.status(200).json(data))
+    movieController.searchMovie(req.params.name).then(data => res.status(200).json(data))
 })
 
 app.get('/', (req, res) => {
-    res.send(`<h1>API Works !!!</h1>`)
+    res.send(`<h1>OK</h1>`)
 });
 
 app.get('/movie/');
